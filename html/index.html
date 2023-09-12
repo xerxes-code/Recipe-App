@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>
+            Easy Recipe App
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1>Easy Recipe App</h1>
+        </header>
+        <main>
+            <div class="add-recipe">
+                <button id="btn-add-recipe">Add a recipe</button>
+            </div>
+            <div class="cancel">
+                <button id="btn-cancel">Cancel</button>
+            </div>
+            <div class="form-new-recipe">
+                <form onsubmit="return false">
+                    <input type="text" name="recipe-title" id="title" placeholder="title..."/>
+                    <br/>
+                    <textarea rows="10" name="recipe-description" id="description" placeholder="description..."></textarea>
+                    <br/>
+                    <button type="button" id="btn-submit">Save</button>
+                    <!-- <input type="submit" id="btn-submit" value="Save"/> -->
+                </form>
+            </div>
+            <div class="recipe-list"><!-- 
+                <div class="recipe">
+                    <h2>Chocolate Chip Cookies</h2>
+                    <p></p>
+                    <button class="view-recipe">View Recipe</button>
+                </div> -->
+                <!-- Add more recipe elements here -->
+            </div>
+            <div class="recipe-details">
+                <h2 id="recipe-title"></h2>
+                <p id="recipe-description"></p>
+                <button id="close-details">Close</button>
+            </div>
+        </main>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
